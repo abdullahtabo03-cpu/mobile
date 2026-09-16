@@ -12,7 +12,7 @@ class CatalogScreen extends StatelessWidget {
       price: 'Rp 1.500.000',
       description: 'Pilihan awal untuk membangun kehadiran digital yang rapi.',
       features: ['Landing page responsif', 'Desain sederhana', 'Revisi 1 kali'],
-      iconCode: 0xe1bd,
+      icon: Icons.language,
       colorValue: 0xff7c4dff,
     ),
     CatalogItem(
@@ -24,7 +24,7 @@ class CatalogScreen extends StatelessWidget {
         'Setup database',
         'Dukungan teknis 24/7',
       ],
-      iconCode: 0xe31e,
+      icon: Icons.laptop_chromebook,
       colorValue: 0xff2979ff,
     ),
     CatalogItem(
@@ -32,7 +32,7 @@ class CatalogScreen extends StatelessWidget {
       price: 'Rp 9.000.000',
       description: 'Paket menyeluruh untuk produk digital yang siap berkembang.',
       features: ['Aplikasi multi-halaman', 'Integrasi API', 'Revisi 3 kali'],
-      iconCode: 0xf0e3,
+      icon: Icons.business_center,
       colorValue: 0xff00a896,
     ),
   ];
@@ -59,10 +59,7 @@ class CatalogScreen extends StatelessWidget {
               leading: CircleAvatar(
                 radius: 27,
                 backgroundColor: color.withValues(alpha: 0.14),
-                child: Icon(
-                  IconData(item.iconCode, fontFamily: 'MaterialIcons'),
-                  color: color,
-                ),
+                child: Icon(item.icon, color: color),
               ),
               title: Text(
                 item.title,

@@ -1,10 +1,12 @@
+import 'package:flutter/material.dart';
+
 class CatalogItem {
   const CatalogItem({
     required this.title,
     required this.price,
     required this.description,
     required this.features,
-    required this.iconCode,
+    required this.icon,
     required this.colorValue,
   });
 
@@ -12,6 +14,6 @@ class CatalogItem {
   final String price;
   final String description;
   final List<String> features;
-  final int iconCode;
+  final IconData icon;
   final int colorValue;
 }

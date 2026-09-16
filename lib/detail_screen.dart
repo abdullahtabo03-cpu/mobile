@@ -45,11 +45,7 @@ class _DetailScreenState extends State<DetailScreen> {
               child: CircleAvatar(
                 radius: 44,
                 backgroundColor: color.withValues(alpha: 0.15),
-                child: Icon(
-                  IconData(item.iconCode, fontFamily: 'MaterialIcons'),
-                  color: color,
-                  size: 44,
-                ),
+                child: Icon(item.icon, color: color, size: 44),
               ),
             ),
             const SizedBox(height: 24),
